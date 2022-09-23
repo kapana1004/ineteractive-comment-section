@@ -354,8 +354,8 @@ h3{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 311px;
-    height: 48px;
+    /* width: 311px; */
+    height: 70px;
     margin-left: 16px;
     margin-bottom: 13px;
 }
@@ -379,6 +379,9 @@ h3{
 }
 .forLine{
     display: flex;
+    flex-direction: column;
+    border-left: 2px solid #E9EBF0;
+
 }
 
 .line{
@@ -665,11 +668,12 @@ textarea::-webkit-input-placeholder {
     flex-direction: row;
     background-color: rgba(255, 255, 255, 1);
     height: 167px;
-    margin-bottom: 20px;
+    margin-top: 20px;
     border-radius: 8px;
 }
 
-.forline{
+.forLine{
+    
     margin-left: 70px;
 }
 .par34desk{
@@ -685,7 +689,9 @@ textarea::-webkit-input-placeholder {
     height: 348PX;
 }
 .cont3-4{
-    margin-left: 65px;
+    margin-left: 24px;
+    padding-right: 24px;
+    padding-left: 22px;
 }
 .youDesk{
     display: flex;
@@ -732,6 +738,8 @@ textarea::-webkit-input-placeholder {
     background: #FFFFFF;
     border-radius: 8px;
     margin-bottom: 50px;
+    margin-left: 360px;
+    margin-top: 24px;
 }
 .avatTextDesk{
     width: 506px;
@@ -803,6 +811,22 @@ textarea::-webkit-input-placeholder {
 
 .popup{
     display: none;
+}
+
+.replayIconDesk1{
+    margin-right: 8px;
+}
+
+#newReply{
+
+    display: flex;
+    width: 730px;
+    /* height: 144px; */
+    background: #FFFFFF;
+    border-radius: 8px;
+    margin-bottom: 50px;
+    /* margin-left: 360px; */
+    margin-top: 24px;
 }
 
 

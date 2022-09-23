@@ -18,7 +18,7 @@
 
   <section class="main">
 
-    <div class="cont1Desk">
+    <!-- <div class="cont1Desk">
 
       <div class="deskPlus1">
         <img class="deskPlus" src="./images/icon-plus.svg" alt="">
@@ -133,8 +133,10 @@
 
     </div>
 
-    <div class="forLine">
-      <div class="line"></div> <div class="cont3-4">
+    <div class="forLine"> -->
+      <!-- <div class="line"> -->
+
+       <!-- </div> <div class="cont3-4">
 
         <div class="cont34Desk">
 
@@ -159,7 +161,7 @@
             <p class="par34desk"> <span class="AT">@maxblagun</span>  If you’re still new, I’d recommend focusing on the fundamentals of HTML, CSS, and JS before considering React. 
               It’s very tempting to jump ahead but lay a solid foundation first.</p>
           </div>
-        </div>
+        </div> 
 
         <div class="cont34Desk">
 
@@ -176,10 +178,10 @@
                 <div class="youDesk"><span class="youDesk1">you</span></div>
                 <span class="deskDate1">2 days ago</span>
               </div>
-              <div class="deskReplay1">
+              <div class="deskReplay1" id="deletComment" >
                 <img src="./images/icon-delete.svg" alt="" class="delDesk">
                 <span class="dd">Delete</span>
-                <img src="./images/icon-reply.svg" alt="" class="replayIconDesk1">
+                <img src="./images/icon-edit.svg" alt="" class="replayIconDesk1">
                 <span class="replayDesk1">Edit</span>
               </div>
     
@@ -272,10 +274,10 @@
       <img src="./images/avatars/image-juliusomo.webp" alt="photo of juliusomo" class="avatJuliusDesk">
 
       <textarea class="avatTextDesk" type="text" placeholder="Add a comment…"></textarea>
-      <!-- <div class="avatar"> -->
+      <div class="avatar">
        
         <button class="sendDesk">SEND</button>
-      <!-- </div> -->
+      </div>
     </div>
 
     
@@ -291,7 +293,18 @@
         </div>
       </div>
 
-      <div class="popup">
+      <div class="cont5">
+
+      
+
+    <textarea class="avatText" type="text" placeholder="Add a comment…"></textarea>
+    <div class="avatar">
+      <img src="./images/avatars/image-juliusomo.png" alt="photo of juliusomo" class="avatJulius">
+      <button class="sent">SEND</button>
+    </div>
+  </div>
+
+       <div class="popup">
         <div class="delPop">
           <div class="titlePar">
             <h1 class="headline">Delete comment</h1>
@@ -307,14 +320,30 @@
             
             </div>
         </div>
-      </div>
+      </div>  -->
+
+      
   </section>
 
-  <!-- Pull dynamic content from the data.json file -->
+  <div class="cont5Desk">
+
+    <img src="./images/avatars/image-juliusomo.webp" alt="photo of juliusomo" class="avatJuliusDesk">
+
+    <textarea class="avatTextDesk" type="text" placeholder="Add a comment…" value=" " ></textarea>
+    <div class="avatar">
+     
+      <button class="sendDesk">SEND</button>
+    </div>
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="https://github.com/kapana1004/ineteractive-comment-section">George Kapanadze</a>.
-  </div>
+
+
+    <!-- <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/kapana1004/ineteractive-comment-section">George Kapanadze</a>.
+    </div> -->
+
+
+  <script src="./coment.js" type="module"></script>
+  
 </body>
 </html>

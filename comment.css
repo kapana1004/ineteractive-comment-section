@@ -411,7 +411,6 @@ textarea::-webkit-input-placeholder {
         width: 100%;
         height: 1500px;
         top: 0;
-        width: 100%;
         display: flex;
         justify-content: center;
         
@@ -443,7 +442,7 @@ textarea::-webkit-input-placeholder {
 .titlePar{
     width: 288px;
     height: 112px;
-    margin-bottom: 32px;
+    
 }
 .headline{
     font-family: 'Rubik';
@@ -468,6 +467,8 @@ textarea::-webkit-input-placeholder {
     height: 48px;
     justify-content: space-between;
     display: flex;
+    margin-top: 50px;
+   
 
 }
 
@@ -482,6 +483,7 @@ textarea::-webkit-input-placeholder {
     line-height: 24px;
     color: rgba(255, 255, 255, 1);
     border: 0;
+    cursor: pointer;
 }
 .yes{
     width: 138px;
@@ -494,6 +496,7 @@ textarea::-webkit-input-placeholder {
     line-height: 24px;
     color: rgba(255, 255, 255, 1);
     border: 0;
+    cursor: pointer;
 }
 
 .deskPlus1{
@@ -547,6 +550,7 @@ textarea::-webkit-input-placeholder {
     margin-right: 24px;
     background-color: rgba(245, 246, 250, 1);
     border-radius: 10px;
+    
 }
 
 .amyDesk{
@@ -667,7 +671,7 @@ textarea::-webkit-input-placeholder {
     display: flex;
     flex-direction: row;
     background-color: rgba(255, 255, 255, 1);
-    height: 167px;
+    /* height: 167px; */
     margin-top: 20px;
     border-radius: 8px;
 }
@@ -810,7 +814,7 @@ textarea::-webkit-input-placeholder {
 }
 
 .popup{
-    display: none;
+    /* display: none; */
 }
 
 .replayIconDesk1{
@@ -829,8 +833,65 @@ textarea::-webkit-input-placeholder {
     margin-top: 24px;
 }
 
+.update{
+
+    width: 104px;
+    height: 48px;
+    background-color: #5357B6;
+    border-radius: 8px;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+    margin-left: 426px;
+    cursor: pointer;
+}
+
+.updateText{
+
+    width: 530px;
+    height: 124px;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #334253;
+    margin-top: 15px;
+    margin-bottom: 16px;
+    border-radius: 8px;
+    resize: none;
+}
+
+.sendNewComment{
+
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(255, 255, 255, 1);
+    width: 730px;
+    height: 167px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.sendVote{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 40px;
+    height: 100px;
+    margin-top: 24px;
+    margin-left: 24px;
+    margin-right: 24px;
+    background-color: rgba(245, 246, 250, 1);
+    border-radius: 10px;
+}
+
 
 
 }
 
-/* Send ღილაკზე ჰავერი არ მუშაობს */

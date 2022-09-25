@@ -86,8 +86,21 @@ function commentsDisplay(comments){
 
            
         let replayImage = composing('img', 'replayIconDesk1', null, null, './images/icon-reply.svg');
-        let replaySpan = composing('span', 'replayDesk1', null, ' Reply');
+        let replayEdit = composing('span', 'replayDesk1', null, ' Reply');
         let pannelPar = composing('p', 'par1desk', null, content);
+
+        let sendCommentButton = document.getElementById("sendComment");
+
+        sendCommentButton.onclick = function(){
+
+            let editComment = composing('div', 'amyDesk', null, 'hello ne div')
+
+            mainSection.append(editComment);
+
+        console.log('hello');
+        }
+
+       
       
 
             
@@ -110,7 +123,7 @@ function commentsDisplay(comments){
         panelDate.append(commentDate);
         panelHead.append(commentReplay);
         commentReplay.append(replayImage);
-        commentReplay.append(replaySpan);
+        commentReplay.append(replayEdit);
         commentPanel.append(pannelPar);
        
         
@@ -153,6 +166,7 @@ function commentsDisplay(comments){
             let replayYouText = composing('span', 'youDesk1', null, 'you');
             let replayAT = composing('span', 'deskDate1', null, replies[i].createdAt);
             let replayIconDiv = composing('div', 'deskReplay1');
+
             replayIconDiv.onclick = function(){
 
                 let juliusDiv = composing('div', null, 'newReply');
@@ -183,7 +197,77 @@ function commentsDisplay(comments){
             let deletSpan = composing('span', 'dd', null, 'Delete');
             let editIcon = composing('img', 'replayIconDesk1', null, null, './images/icon-edit.svg');
             let editSpan = composing('span', 'replayDesk1', null, 'Edit');
+            let deletReplay = composing('div', 'popup');
+            let deletePopup = composing('div', 'delPop');
+            let deleteText = composing('div', 'titlePar');
+            let deleteHeadline = composing('h1', 'headline', null, 'Delete comment');
+            let deletePar = composing('p', 'popText', null, 'Are you sure you want to delete this comment? This will remove the comment and can’t be undone.');
+            let buttonsDiv = composing('div', 'btn1');
+            let buttonNo = composing('button', 'no', null, 'NO, CANCEL');
+            let buttonYes = composing('button', 'yes', null, 'YES, DELETE');
+         
 
+            deletSpan.onclick = function(){
+
+                mainSection.append(deletReplay);
+                deletReplay.append(deletePopup);
+                deletePopup.append(deleteText);
+                deleteText.append(deleteHeadline);
+                deleteText.append(deletePar);
+                deletePopup.append(buttonsDiv);
+                buttonsDiv.append(buttonNo);
+                buttonsDiv.append(buttonYes);
+
+
+
+            }
+    
+            buttonNo.onclick = function(){
+
+                deletReplay.remove()
+
+
+            }
+
+            buttonYes.onclick = function(){
+                replayDives.remove();
+                deletReplay.remove()
+
+            }
+
+            
+            editSpan.onclick = function updating(){
+
+
+                let updateButton = composing('button', 'update', null, 'UPDATE'); 
+                let apdateTextSpace = composing('textarea', 'updateText', null, '@ramsesmiron I couldn’t agree more with this. Everything moves so fast and it always seems like everyone knows the newest library/framework. But the fundamentals are what stay constant.');
+
+                replayPanelPar.parentNode.replaceChild(apdateTextSpace, replayPanelPar);
+
+
+                replayPanel.append(updateButton);
+
+                updateButton.onclick = function(){
+
+                    updateButton.remove() 
+                }
+
+
+               
+
+                //  stop multiplies of "update" button composing with pushing of edit button
+    
+            }
+
+          
+
+             
+
+
+           
+  
+
+            
             
             // let textSpace = composing('div', 'cont5Desk');
             // let textAvatar = composing('img', 'avatJuliusDesk', null, null, currentUser.image.png);

@@ -10,6 +10,8 @@ const mainSection = document.querySelector(".main");
 
 
 
+
+
 function composing(tag, className, id, text, src ){
 
    
@@ -93,22 +95,60 @@ function commentsDisplay(comments){
 
         sendCommentButton.onclick = function(){
 
-            let editComment = composing('div', 'amyDesk', null, 'hello ne div')
+            let addComment = composing('div', 'sendNewComment');
+            let addVote = composing('div', 'sendVote');
+            let sendCommentPlus = composing('img', null, null, null, './images/icon-plus.svg');
+            let sendVoteSpan = composing('span', 'sendCommentVoteSpan', null, '0');
+            let sendCommentMinus = composing ('img', null, null, null, './images/icon-minus.svg');
+            let sendPanel = composing('div', 'sendCommentPanel');
+            let sendCommentLine = composing('div', 'sendCommentLine');
+            let sendUserDiv = composing('div', 'sendCommentAvatarDiv');
+            let sendCommentAvatar = composing('img', 'sendCommentAvatar', null, null, './images/avatars/image-juliusomo.png');
+            let sendUsername = composing('span', 'sendCommentUsername', null, 'juliusomo');
+            let sendYouDiv = composing('div', 'sendCommentYouDiv');
+            let sendYouText = composing('span', 'sendYouSpan', null, 'you');
+            let sendCommentAT = composing('span', 'deskDate1', null, 'Today');
+            let sendDelEdDiv = composing('div', 'sendDeleteEditDiv');
+            let sendDelImage = composing('img', null, null, null, './images/icon-delete.svg');
+            let sendDelSpan = composing('span', 'sendDelet', null, 'Delete');
+            let sendEditImage = composing('img', 'edidImage', null, null, './images/icon-edit.svg')
+            let sendEdit = composing('span', 'sendEditSpan', null, 'Edit');
+            let sendCommentPar = composing('div', 'sendCommentPar', null, '');
 
-            mainSection.append(editComment);
 
-        console.log('hello');
-        }
+
+            mainSection.append(addComment);
+            addComment.append(addVote);
+            addVote.append(sendCommentPlus);
+            addVote.append(sendVoteSpan);
+            addVote.append(sendCommentMinus);
+            addComment.append(sendPanel);
+            sendPanel.append(sendCommentLine);
+            sendCommentLine.append(sendUserDiv);
+            sendUserDiv.append(sendCommentAvatar);
+            sendUserDiv.append(sendUsername);
+            sendUserDiv.append(sendYouDiv);
+            sendYouDiv.append(sendYouText);
+            sendUserDiv.append(sendCommentAT);
+            sendCommentLine.append(sendDelEdDiv);
+            sendDelEdDiv.append(sendDelImage);
+            sendDelEdDiv.append(sendDelSpan)
+            sendDelEdDiv.append(sendEditImage);
+            sendDelEdDiv.append(sendEdit); 
+            sendPanel.append(sendCommentPar);
+           
+
+            let sendTextarea = document.querySelector(".avatTextDesk");
+
+            sendCommentPar.textContent = sendTextarea.value;
+
+
+
 
        
-      
+        }
 
             
-        
-        
-
-
-    
       
         mainSection.append(comentDiv);
         comentDiv.append(voteBox);
@@ -128,12 +168,14 @@ function commentsDisplay(comments){
        
         
 
-      
-        let replayContainer = composing('div', 'forLine', id);
+        const replayContainer = composing('div', 'forLine', id);
+        
         mainSection.append(replayContainer);
     
 
         for(let i =0; i<replies.length; i++){
+
+
 
 
 
@@ -236,20 +278,38 @@ function commentsDisplay(comments){
             }
 
             
-            editSpan.onclick = function updating(){
+              editSpan.onclick = function updating(){
 
 
                 let updateButton = composing('button', 'update', null, 'UPDATE'); 
-                let apdateTextSpace = composing('textarea', 'updateText', null, '@ramsesmiron I couldn’t agree more with this. Everything moves so fast and it always seems like everyone knows the newest library/framework. But the fundamentals are what stay constant.');
+                let updateTextSpace = composing('textarea', 'updateText', null, '@ramsesmiron I couldn’t agree more with this. Everything moves so fast and it always seems like everyone knows the newest library/framework. But the fundamentals are what stay constant.');
+                
+                let deletEditDiv = function(){
+                    deletReplayComment.style.display="none";
 
-                replayPanelPar.parentNode.replaceChild(apdateTextSpace, replayPanelPar);
+
+                } 
+
+                deletEditDiv();
+                replayPanelPar.parentNode.replaceChild(updateTextSpace, replayPanelPar);
 
 
                 replayPanel.append(updateButton);
 
                 updateButton.onclick = function(){
+                    replayPanelPar.textContent = updateTextSpace.value;
 
-                    updateButton.remove() 
+
+
+                    updateButton.remove();
+                    deletReplayComment.style.display="block";
+
+                    updateTextSpace.parentNode.replaceChild(replayPanelPar, updateTextSpace);
+                    
+                    
+                    // editSpan.onclick = null;
+
+                    //how to reset edit.onclick function?
                 }
 
 

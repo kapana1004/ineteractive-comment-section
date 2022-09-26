@@ -620,6 +620,15 @@ textarea::-webkit-input-placeholder {
     line-height: 19px;
     color: #334253;
 }
+
+.amyDeskame{
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #334253;
+}
 .deskDate1{
     font-family: 'Rubik';
     font-style: normal;
@@ -875,6 +884,7 @@ textarea::-webkit-input-placeholder {
     height: 167px;
     margin-bottom: 20px;
     border-radius: 8px;
+    margin-top: 20px;
 }
 
 .sendVote{
@@ -889,6 +899,113 @@ textarea::-webkit-input-placeholder {
     margin-right: 24px;
     background-color: rgba(245, 246, 250, 1);
     border-radius: 10px;
+}
+
+.sendVote.img{
+
+    width: 10px;
+}
+
+
+.sendCommentVoteSpan{
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: rgba(83, 87, 182, 1);
+}
+.sendCommentPanel{
+    display: flex;
+    flex-direction: column;
+}
+
+.sendCommentLine{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 24px;
+    width: 620px;
+    margin-bottom: 20px;
+
+}
+
+.sendCommentAvatarDiv{
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    width: 240px;
+}
+.sendCommentAvatar{
+
+    width: 32px;
+    height: 32px;
+}
+
+.sendCommentUsername{
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #334253;
+}
+.sendCommentYouDiv{
+    display: flex;
+    background-color: #5357B6;
+    width: 36px;
+    height: 19px;
+    border-radius: 2px;
+}
+
+.sendYouSpan{
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 15px;
+    color: #FFFFFF;
+    margin: auto;
+}
+
+.sendDeleteEditDiv{
+    display: block;
+    margin-right: 24px;
+}
+
+.sendDelet{
+    margin-right: 24px;
+    margin-left: 8px;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #ED6368;
+}
+
+.edidImage{
+    margin-right: 8px;
+}
+
+.sendEditSpan{
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #5357B6;
+}
+
+.sendCommentPar{
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #67727E;
+    width: 530px;
 }
 
 

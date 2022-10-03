@@ -193,6 +193,18 @@ h3{
     border-radius: 8px;
 }
 
+.cont3-4{
+
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* padding-left: 20px; */
+    border-left: 2px solid rgba(233, 235, 240, 1);
+    margin-left: 16px;
+    padding-left: 16px;
+    margin-bottom: 16px;
+}
+
 .ramses{
 
     display: flex;
@@ -238,7 +250,7 @@ h3{
     /* margin-left: 34px; */
     background-color: rgba(255, 255, 255, 1);
     border-radius: 8px;
-    margin-bottom: 16px;
+    /* margin-bottom: 16px; */
 }
 
 .julius{
@@ -380,7 +392,7 @@ h3{
 .forLine{
     display: flex;
     flex-direction: column;
-    border-left: 2px solid #E9EBF0;
+    /* border-left: 2px solid #E9EBF0; */
 
 }
 
@@ -407,7 +419,7 @@ textarea::-webkit-input-placeholder {
 
     .popup{
         background-color: rgba(0, 0, 0, 0.5);
-        position: absolute;
+        position: fixed;
         width: 100%;
         height: 1500px;
         top: 0;
@@ -415,12 +427,16 @@ textarea::-webkit-input-placeholder {
         justify-content: center;
         
     }
+
+  
 .delPop{
     background-color: white;
     width: 300px;
     height: 100px;
     
 }
+
+
 
 .delPop{
     display: flex;
@@ -444,6 +460,8 @@ textarea::-webkit-input-placeholder {
     height: 112px;
     
 }
+
+
 .headline{
     font-family: 'Rubik';
     font-style: normal;
@@ -453,6 +471,8 @@ textarea::-webkit-input-placeholder {
     color: rgba(51, 66, 83, 1);
 
 }
+
+
 .popText{
     font-family: 'Rubik';
     font-style: normal;
@@ -461,6 +481,8 @@ textarea::-webkit-input-placeholder {
     line-height: 24px;
     color: rgba(103, 114, 126, 1);
 }
+
+
 
 .btn1{
     width: 288px;
@@ -485,7 +507,35 @@ textarea::-webkit-input-placeholder {
     border: 0;
     cursor: pointer;
 }
+
+.noNew{
+    width: 138px;
+    background-color: rgba(103, 114, 126, 1);
+    border-radius: 8px;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 1);
+    border: 0;
+    cursor: pointer;
+}
 .yes{
+    width: 138px;
+    background-color: rgba(237, 99, 104, 1);
+    border-radius: 8px;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 1);
+    border: 0;
+    cursor: pointer;
+}
+
+.yesNew{
     width: 138px;
     background-color: rgba(237, 99, 104, 1);
     border-radius: 8px;
@@ -809,7 +859,7 @@ textarea::-webkit-input-placeholder {
     display: flex;
     justify-content: center;
     background-color: rgba(0, 0, 0, 0.5);
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: 100%;
     top: 0;
@@ -859,6 +909,23 @@ textarea::-webkit-input-placeholder {
     cursor: pointer;
 }
 
+.updateNew{
+
+    width: 104px;
+    height: 48px;
+    background-color: #5357B6;
+    border-radius: 8px;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+    margin-left: 515px;
+    cursor: pointer;
+}
+
 .updateText{
 
     width: 530px;
@@ -875,13 +942,40 @@ textarea::-webkit-input-placeholder {
     resize: none;
 }
 
+.updateTextNew{
+
+    width: 530px;
+    height: 124px;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #334253;
+    margin-top: 15px;
+    margin-bottom: 16px;
+    border-radius: 8px;
+    resize: none;
+}
+
+.commentPar{
+    width: 618px;
+    height: 71px;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #67727E;
+}
+
 .sendNewComment{
 
     display: flex;
     flex-direction: row;
     background-color: rgba(255, 255, 255, 1);
     width: 730px;
-    height: 167px;
+    /* height: 167px; */
     margin-bottom: 20px;
     border-radius: 8px;
     margin-top: 20px;
@@ -899,11 +993,13 @@ textarea::-webkit-input-placeholder {
     margin-right: 24px;
     background-color: rgba(245, 246, 250, 1);
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .sendVote.img{
 
     width: 10px;
+    
 }
 
 
@@ -972,6 +1068,7 @@ textarea::-webkit-input-placeholder {
 .sendDeleteEditDiv{
     display: block;
     margin-right: 24px;
+    cursor: pointer;
 }
 
 .sendDelet{
@@ -983,6 +1080,9 @@ textarea::-webkit-input-placeholder {
     font-size: 16px;
     line-height: 24px;
     color: #ED6368;
+}
+.sendDelet:hover{
+    color:  #FFB8BB;
 }
 
 .edidImage{
@@ -996,6 +1096,9 @@ textarea::-webkit-input-placeholder {
     font-size: 16px;
     line-height: 24px;
     color: #5357B6;
+}
+.sendEditSpan:hover{
+    color: rgba(197, 198, 239, 1);
 }
 
 .sendCommentPar{
